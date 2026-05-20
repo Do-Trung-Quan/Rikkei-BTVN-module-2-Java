@@ -1,0 +1,16 @@
+package ex06;
+
+public class Car extends MotorVehicle{
+    public Car(String brand, int year, String fuelType) {
+        super(brand, year, fuelType);
+    }
+
+    @Override
+    public void startEngine(){
+        System.out.printf("%s (Car) engine starts: Vroom Vroom!\n", brand);
+    }
+
+    public void openTrunk(){
+        System.out.printf("%s trunk is opening...\n", brand);
+    }
+}
